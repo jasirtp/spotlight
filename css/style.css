@@ -1,0 +1,254 @@
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align: baseline;
+	background: transparent;
+	font-weight: normal;
+	text-decoration: none;
+	outline: none;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+ol, ul {
+	list-style: none;
+}
+del {
+	text-decoration: line-through;
+}
+body {
+	font-family: "Circular-Std-Regular", Arial, Helvetica, sans-serif;
+	font-size: 17px;
+	color: #1C2C40;
+	overflow-x: hidden;
+	min-width: 320px;
+	font-weight: 400;
+}
+input,textarea,select{
+	font-family: "Circular-Std-Regular", Arial, Helvetica, sans-serif;
+	font-weight: 400;
+}
+
+a{
+	color: #1C2C40;
+}
+a:hover,.submit:hover{
+	filter: alpha(opacity = 85);
+	-moz-opacity: 0.85;
+	-khtml-opacity: 0.85;
+	opacity: 0.85;
+}
+.thumb{
+	display: block;
+}
+.thumb img{
+	display: block;
+	width:100%;
+}
+p{
+	line-height:1.6em;
+	font-size: 16px;
+	font-family: "Circular-Std-Regular", Arial;
+	font-weight: 500;
+}
+.hidden{
+	display:none;
+}
+br.clear {
+	clear: both;
+	line-height: 0;
+}
+.wrapper {
+	width: 90%;
+	margin: 0 auto;
+	max-width:1100px;
+}
+@font-face {
+	font-family: 'Circular-Std-Regular';
+	src:url('../fonts/CircularStd-Regular.woff2') format('woff2');
+	src:url('9../fonts/CircularStd-Regular.woff') format('woff');
+	font-style: normal;
+}
+@font-face {
+    font-family: 'Circular-Std-Bold';
+    src: url("../fonts/CircularStd-Bold.woff2") format("woff2");
+    src: url("../fonts/CircularStd-Bold.woff") format("woff");
+    font-style: normal;
+}
+header {
+	height: 100px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 90%;
+	margin: 0 auto;
+}
+header h1.left {
+	width: 95px;
+}
+header h1.left a {
+	width: 100%;
+	display: block;
+}
+header h1.left a img {
+	width: 100%;
+	display: block;
+}
+header nav.middle ul li:hover {
+	border-bottom: .5px solid #737488;
+	padding-bottom: 5px;
+}
+header ul {
+	display: flex;
+	align-items: center;
+}
+header ul li {
+	margin-right: 30px;
+	
+}
+header ul li:last-child {
+	margin-right: 0;
+}
+header ul li a {
+	font-size: 16px;
+	color: #737488;
+}
+header ul li a.button {
+	padding: 10px 20px;
+	color: #005AF9;
+	border: .5px solid #737488;
+	border-radius: 30px;
+}
+header ul li a.button:hover {
+	color: #fff;
+	font-weight: 500;
+	background:  #005AF9;
+}
+#spotlight {
+	padding-top: 30px;
+}
+#spotlight section.wrapper {
+	display: flex;
+	justify-content: space-between;
+}
+#spotlight section.left {
+	width: 49%;
+	padding: 40px 20px 20px;
+}
+#spotlight section.left h1 {
+	font-size: 60px;
+	font-family: 'Circular-Std-Bold';
+	letter-spacing: 3px;
+	font-weight: 900;
+	margin-top: 100px;
+}
+#spotlight section.left p {
+	font-weight: 500;
+	color: #737488;
+	margin-top: 30px;
+	font-size: 16px;
+    max-width: 380px;
+}
+#spotlight section.left a.button {
+	color: #fff;
+	font-weight: 600;
+	background:  #005AF9;
+	padding: 10px 20px;
+	border: .5px solid #737488;
+	border-radius: 30px;
+	margin: 30px 0;
+	display: inline-block;
+
+}
+#spotlight section.left ul {
+
+}
+#spotlight section.left ul li {
+	font-size: 16px;
+	font-weight: 600;
+	margin-bottom: 10px;
+	color: #737488;
+	display: flex;
+	align-items: center;
+}
+#spotlight section.left ul li img {
+	width: 17px;
+	margin-right: 10px;
+}
+#spotlight section.right {
+	width: 49%;
+	position: relative;
+}
+#spotlight section.right img.qt {
+	position: absolute;
+	z-index: 3;
+	width: 40px;
+    top: 442px;
+    left: -110px;
+
+}
+#spotlight section.right div.quotes {
+	position: absolute;
+	background: #11103B;
+	color: #fff;
+	z-index: 2;
+	width: 320px;
+	padding: 25px;
+    top: 442px;
+    left: -88px;
+}
+#spotlight section.right div.quotes q {
+	font-size: 12px;
+	font-weight: 600;
+	margin-bottom: 20px;
+	line-height: 1.7em;
+	display: block;
+}
+#spotlight section.right div.quotes p {
+	font-size: 13px;
+	font-weight: 600;
+	display: block;
+}
+#spotlight section.right div.quotes small {
+	font-size: 10px;
+	display: block;
+	color: #737488;
+}
+#spotlight section.right img.main_img {
+	width: 400px;
+	position: absolute;
+	top: 20px;
+	z-index: 1;
+	right: 120px;
+}
+#spotlight section.right img.mesh_img {
+	width: 130px;
+	position: absolute;
+	z-index: 0;
+    right: 95px;
+    top: 480px;
+
+}
+#spotlight section.right div.grey_shade {
+	width: 400px;
+	height: 560px;
+	background: #E2E2E2;
+	position: absolute;
+	right: 0px;
+	top: 90px;
+	z-index: -1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
